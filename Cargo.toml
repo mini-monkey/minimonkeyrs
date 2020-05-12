@@ -1,0 +1,15 @@
+[package]
+name = "minimonkeyrs"
+version = "0.1.0"
+authors = ["Niklas Johansson <raphexion@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "publish"
+path = "src/publish.rs"
+
+[[bin]]
+name = "subscriber"
+path = "src/subscriber.rs"
+
+[dependencies]
