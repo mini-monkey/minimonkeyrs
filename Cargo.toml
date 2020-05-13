@@ -3,6 +3,12 @@ name = "minimonkeyrs"
 version = "0.1.0"
 authors = ["Niklas Johansson <raphexion@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/mini-monkey/minimonkeyrs.git"
+license-file = "LICENSE"
+description = "Rust client for the minimonkey message broker"
+readme = "README.md"
+keywords = ["iot"]
+categories = ["command-line-utilities"]
 
 [[bin]]
 name = "publish"
