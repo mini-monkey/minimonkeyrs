@@ -9,6 +9,7 @@ description = "Rust client for the minimonkey message broker"
 readme = "README.md"
 keywords = ["iot"]
 categories = ["command-line-utilities"]
+homepage = "https://github.com/mini-monkey/minimonkeyrs"
 
 [[bin]]
 name = "publish"
