@@ -1,0 +1,10 @@
+language: rust
+
+rust:
+  - stable
+
+install:
+    pip install --user --disable-pip-version-check codecov
+
+after_success:
+    codecov
