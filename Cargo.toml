@@ -12,8 +12,8 @@ categories = ["command-line-utilities"]
 homepage = "https://github.com/mini-monkey/minimonkeyrs"
 
 [[bin]]
-name = "publish"
-path = "src/publish.rs"
+name = "mm_publish"
+path = "src/mm_publish.rs"
 
 [[bin]]
 name = "subscriber"
