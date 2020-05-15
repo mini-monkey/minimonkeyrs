@@ -16,8 +16,8 @@ name = "mm_publish"
 path = "src/mm_publish.rs"
 
 [[bin]]
-name = "subscriber"
-path = "src/subscriber.rs"
+name = "mm_subscribe"
+path = "src/mm_subscribe.rs"
 
 [dependencies]
 clap = "2.33"
