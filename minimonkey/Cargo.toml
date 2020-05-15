@@ -1,0 +1,14 @@
+[package]
+name = "minimonkey"
+version = "0.1.1"
+authors = ["Niklas Johansson <raphexion@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/mini-monkey/minimonkeyrs.git"
+license-file = "../LICENSE"
+description = "Rust library for the Mini Monkey broker"
+readme = "../README.md"
+keywords = ["iot", "cli", "minimonkey"]
+categories = ["command-line-utilities"]
+homepage = "https://github.com/mini-monkey/minimonkeyrs"
+
+[dependencies]

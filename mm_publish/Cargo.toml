@@ -1,0 +1,18 @@
+[package]
+name = "mm_publish"
+version = "0.1.1"
+authors = ["Niklas Johansson <raphexion@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/mini-monkey/minimonkeyrs.git"
+license-file = "../LICENSE"
+description = "Rust client for the minimonkey message broker"
+readme = "../README.md"
+keywords = ["iot", "cli", "minimonkey"]
+categories = ["command-line-utilities"]
+homepage = "https://github.com/mini-monkey/minimonkeyrs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+minimonkey = { path = "../minimonkey", version = "0.1.1" }
+clap = "2.33"

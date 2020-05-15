@@ -1,5 +1,5 @@
-mod minimonkey;
 use clap::{App, Arg};
+use minimonkey;
 use std::net::TcpStream;
 use std::time::Duration;
 
@@ -42,7 +42,7 @@ fn subscribe(stream: &mut TcpStream, token: &str, room: &str, tag: &str) {
 
 pub fn main() {
     let matches = App::new("mm_subscribe")
-        .version("0.1.0")
+        .version("0.1.1")
         .author("Niklas Johansson <raphexion@gmail.com>")
         .about("Subscribe to messages on Mini Monkey broker")
         .arg(

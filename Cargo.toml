@@ -1,23 +1,7 @@
-[package]
-name = "minimonkeyrs"
-version = "0.1.0"
-authors = ["Niklas Johansson <raphexion@gmail.com>"]
-edition = "2018"
-repository = "https://github.com/mini-monkey/minimonkeyrs.git"
-license-file = "LICENSE"
-description = "Rust client for the minimonkey message broker"
-readme = "README.md"
-keywords = ["iot"]
-categories = ["command-line-utilities"]
-homepage = "https://github.com/mini-monkey/minimonkeyrs"
+[workspace]
+members = [
+    "minimonkey",
+    "mm_publish",
+    "mm_subscribe",
+]
 
-[[bin]]
-name = "mm_publish"
-path = "src/mm_publish.rs"
-
-[[bin]]
-name = "mm_subscribe"
-path = "src/mm_subscribe.rs"
-
-[dependencies]
-clap = "2.33"
