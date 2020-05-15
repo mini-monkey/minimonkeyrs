@@ -3,8 +3,18 @@ language: rust
 rust:
   - stable
 
-install:
-    pip install --user --disable-pip-version-check codecov
+script:
+  - cargo build --release --verbose --all
+  - cargo test --release --verbose --all
 
-after_success:
-    codecov
+deploy:
+  provider: releases
+  token: $GITHUB_TOKEN
+  file:
+    - $TRAVIS_BUILD_DIR/target/release/mm_publish
+    - $TRAVIS_BUILD_DIR/target/release/mm_subscribe
+  skip_cleanup: true
+  on:
+    tags: true
+
+cache: cargo
