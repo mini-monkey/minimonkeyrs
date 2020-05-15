@@ -20,3 +20,4 @@ name = "subscriber"
 path = "src/subscriber.rs"
 
 [dependencies]
+clap = "2.33"
