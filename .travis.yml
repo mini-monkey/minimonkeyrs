@@ -1,7 +1,12 @@
+dist: bionic
+
 language: rust
 
 rust:
   - stable
+
+git:
+  depth: 1
 
 script:
   - cargo build --release --verbose --all
