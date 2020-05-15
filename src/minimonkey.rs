@@ -37,6 +37,10 @@ impl Response {
         }
         println!("Unhandle code: {:?}", self.code);
     }
+
+    pub fn as_string(&self) -> String {
+        String::from_utf8(self.data.clone()).unwrap()
+    }
 }
 
 fn common(stream: &mut impl Write, code: &[u8], payload: &[u8]) -> Result<usize, Error> {
