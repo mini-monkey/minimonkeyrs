@@ -18,3 +18,33 @@ Project Plan
 - [ ] Stabile subscribe
 - [ ] Minimal administration tasks
 - [ ] Complete broker provisioning
+
+Provisioning
+------------
+
+One of the main goals of the Mini Monkey broker is that it can be programmatically provisioned.
+
+```sh
+mm_provision --host localhost --port 1773 --token adminToken --file provision.yaml
+```
+
+```yaml
+rooms:
+  - name: Kitchen
+    tokens_allowed_to_admin:
+      - admin1
+    tokens_allowed_to_publish:
+      - sensor1
+      - sensor2
+    tokens_allowed_to_subscribe:
+      - house_automation
+
+  - name: LivingRoom
+    tokens_allowed_to_admin:
+      - admin2
+    tokens_allowed_to_publish:
+      - sensor3
+      - sensor4
+    tokens_allowed_to_subscribe:
+      - house_automation
+```

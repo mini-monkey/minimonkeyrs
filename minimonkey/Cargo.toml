@@ -1,6 +1,6 @@
 [package]
 name = "minimonkey"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Niklas Johansson <raphexion@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/mini-monkey/minimonkeyrs.git"
@@ -12,3 +12,4 @@ categories = ["command-line-utilities"]
 homepage = "https://github.com/mini-monkey/minimonkeyrs"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }

@@ -90,6 +90,38 @@ pub fn subscribe(stream: &mut impl Write, tag: &str) -> Result<usize, Error> {
     common(stream, &[0x04], tag.as_bytes())
 }
 
+pub fn add_admin_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x10], token.as_bytes())
+}
+
+pub fn revoke_admin_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x11], token.as_bytes())
+}
+
+pub fn add_publish_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x12], token.as_bytes())
+}
+
+pub fn revoke_publish_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x13], token.as_bytes())
+}
+
+pub fn add_subscribe_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x14], token.as_bytes())
+}
+
+pub fn revoke_subscribe_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x15], token.as_bytes())
+}
+
+pub fn add_login_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x16], token.as_bytes())
+}
+
+pub fn revoke_login_permission(stream: &mut impl Write, token: &str) -> Result<usize, Error> {
+    common(stream, &[0x17], token.as_bytes())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

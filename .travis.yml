@@ -18,6 +18,7 @@ deploy:
   file:
     - $TRAVIS_BUILD_DIR/target/release/mm_publish
     - $TRAVIS_BUILD_DIR/target/release/mm_subscribe
+    - $TRAVIS_BUILD_DIR/target/release/mm_provision
   skip_cleanup: true
   on:
     tags: true

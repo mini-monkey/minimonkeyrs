@@ -1,0 +1,18 @@
+rooms:
+  - name: Kitchen
+    tokens_allowed_to_admin:
+      - admin1
+    tokens_allowed_to_publish:
+      - sensor1
+      - sensor2
+    tokens_allowed_to_subscribe:
+      - house_automation
+
+  - name: LivingRoom
+    tokens_allowed_to_admin:
+      - admin2
+    tokens_allowed_to_publish:
+      - sensor3
+      - sensor4
+    tokens_allowed_to_subscribe:
+      - house_automation

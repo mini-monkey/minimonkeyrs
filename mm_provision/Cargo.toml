@@ -1,5 +1,5 @@
 [package]
-name = "mm_subscribe"
+name = "mm_provision"
 version = "0.1.2"
 authors = ["Niklas Johansson <raphexion@gmail.com>"]
 edition = "2018"
@@ -16,3 +16,4 @@ homepage = "https://github.com/mini-monkey/minimonkeyrs"
 [dependencies]
 minimonkey = { path = "../minimonkey", version = "0.1.2" }
 clap = "2.33"
+serde_yaml = "0.8"

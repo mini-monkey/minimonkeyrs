@@ -26,7 +26,7 @@ fn publish(stream: &mut TcpStream, token: &str, room: &str, message: &str) {
 
 pub fn main() {
     let matches = App::new("mm_publish")
-        .version("0.1.1")
+        .version("0.1.2")
         .author("Niklas Johansson <raphexion@gmail.com>")
         .about("Publish message to Mini Monkey broker")
         .arg(

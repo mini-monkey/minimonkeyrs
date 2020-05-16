@@ -3,5 +3,6 @@ members = [
     "minimonkey",
     "mm_publish",
     "mm_subscribe",
+    "mm_provision",
 ]
 
