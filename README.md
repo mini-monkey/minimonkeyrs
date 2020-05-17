@@ -1,5 +1,4 @@
-Mini Monkey Rust client
-=======================
+# Mini Monkey Rust client
 
 [![Build Status](https://travis-ci.org/mini-monkey/minimonkeyrs.svg?branch=master)](https://travis-ci.org/mini-monkey/minimonkeyrs)
 [![License Apache 2](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -11,16 +10,20 @@ Considerably smaller and simpler than [MQTT](https://en.wikipedia.org/wiki/MQTT)
 
 This repository contains the rust crate for the Mini Monkey client code.
 
-Project Plan
-------------
+## Examples
+
+[mm_publish](https://github.com/mini-monkey/minimonkeyrs/releases/latest/download/mm_publish)
+[mm_subscribe](https://github.com/mini-monkey/minimonkeyrs/releases/latest/download/mm_subscribe)
+[mm_provision](https://github.com/mini-monkey/minimonkeyrs/releases/latest/download/mm_provision)
+
+## Project Plan
 
 - [ ] Stabile publish
 - [ ] Stabile subscribe
 - [ ] Minimal administration tasks
 - [ ] Complete broker provisioning
 
-Provisioning
-------------
+## Provisioning
 
 One of the main goals of the Mini Monkey broker is that it can be programmatically provisioned.
 
