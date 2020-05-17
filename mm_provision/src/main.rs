@@ -8,8 +8,10 @@ use serde_yaml;
 use std::fs::File;
 use std::io::Error;
 use std::net::TcpStream;
-use std::time::Duration;
 mod utils;
+use std::path::Path;
+use std::process;
+use std::time::Duration;
 
 use utils::BrokerAccess;
 
@@ -160,7 +162,16 @@ fn main() {
     let host = matches.value_of("host").unwrap_or("localhost");
     let port = matches.value_of("port").unwrap_or("1773");
     let token = matches.value_of("token").unwrap_or("myToken");
-    let file = matches.value_of("file").unwrap();
+    let file = matches.value_of("file").unwrap_or("");
+
+    if !Path::exists(Path::new(file)) {
+        if file.is_empty() {
+            println!("Provision file missing");
+        } else {
+            println!("Provision file missing ({})", file);
+        }
+        process::exit(1);
+    }
 
     match TcpStream::connect(format!("{}:{}", host, port)) {
         Ok(mut stream) => {
